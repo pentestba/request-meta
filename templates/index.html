@@ -18,12 +18,12 @@
     </div>
     <div class="mid">
       <div class="create">
-        <p>:) Hello, RequestMeta 是 WebHook 调试利器. 您可以创建一个连接进行测试. 创建连接后可以通过浏览器, cURL, 编程代码的访问， 访问指定的 URL, RequestMeta 会为你保存请求的所有数据, 您可以回溯查看所有调用元信息. </p>
-        <div class="button" onclick="createNamespace()">✚ 创建测试空间  </div>
+        <p>:) Hello, RequestMeta is a WebHook debugging tool. You can create a connection for testing. After creating a connection, you can access the specified URL through browser, cURL, programming code, RequestMeta will save all the requested data for you, you can look back All call meta information. </p>
+        <div class="button" onclick="createNamespace()">✚ Get Listener URL  </div>
       </div>
       <div class="history">
-        <div style="font-weight: bold;">░ 历史纪录</div>
-        <div id="historys">无</div>
+        <div style="font-weight: bold;">░ History</div>
+        <div id="historys">none</div>
       </div>
     </div>
   </div>
@@ -58,9 +58,9 @@
       $('#historys').html("");
 
       if (historys.length === 0) {
-        $('#historys').html('<div class="meta"> :( 没有历史纪录, &nbsp;请创建测试空间</div>');
+        $('#historys').html('<div class="meta"> :( no history, &nbsp;Please create a Listener URL</div>');
       } else {
-        $('#historys').html('<div class="meta"> 最多保留最近的10个空间.</div>');
+        $('#historys').html('<div class="meta"> Keep the most recent 10 Listeners URLs at most.</div>');
       }
 
       historys.forEach((history) => {
