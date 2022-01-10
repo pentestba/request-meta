@@ -7,7 +7,7 @@
   <h3 class="location monospace" style="margin-top: 0;">{{ location }}</h3>
   {% if not entrys %}
   <div class="intro">
-      <p>测试空间已经创建. 通过浏览器或通过下面代码的形式访问 <a href="/{{ location }}"><span class="host"></span>/{{location}}</a> 后, 刷新这个页面就会显示接口调用的调试信息.</p>
+      <p>Listener URL has been created. Access via browser or via the code below <a href="/{{ location }}"><span class="host"></span>/{{location}}</a> After that, refreshing this page and it will display the debugging information of the interface call (HTTP Requests Information).</p>
       {% include 'examples.html' %}
     </div>
     {% endif %}
